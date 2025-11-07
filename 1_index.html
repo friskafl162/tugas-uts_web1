@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Toko Buku Online</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Sedikit tambahan style khusus splash */
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #ffe4ec, #e0f7ff, #eaffea);
+      font-family: 'Poppins', sans-serif;
+      overflow: hidden;
+    }
+
+    .splash {
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .splash h1 {
+      font-size: 2rem;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    .splash p {
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .splash button {
+      background: linear-gradient(135deg, #fddde6, #d5ecff);
+      border: none;
+      border-radius: 12px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: transform 0.1s, box-shadow 0.2s;
+    }
+
+    .splash button:hover {
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+      transform: translateY(-1px);
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <div class="splash">
+    <h1>📚 Selamat Datang di Toko Buku Online</h1>
+    <p>Temukan buku favoritmu dengan nuansa pastel yang lembut 💕</p>
+    <button onclick="window.location.href='2_login.html'">Masuk Sekarang</button>
+  </div>
+
+  <script>
+    // Auto redirect ke login.html setelah 3 detik
+    setTimeout(() => {
+      window.location.href = "2_login.html";
+    }, 3000);
+  </script>
+</body>
+</html>

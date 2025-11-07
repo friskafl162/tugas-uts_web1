@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Laporan Pesanan - Bookstore Pastel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Laporan Pesanan</h2>
+      <div class="nav">
+        <a class="btn" href="3_dashboard.html">Dashboard</a>
+        <a class="btn" href="4_checkout.html">Checkout</a>
+        <a class="btn" href="6_tracking.html">Tracking</a>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:20px">
+      <h3>📦 Daftar Pesanan</h3>
+      <table class="table" id="orderTable">
+        <thead>
+          <tr>
+            <th>No DO</th>
+            <th>Nama Pemesan</th>
+            <th>Alamat</th>
+            <th>Ekspedisi</th>
+            <th>Paket</th>
+            <th>Tanggal Kirim</th>
+            <th>Total</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div class="footer">Bookstore Pastel • Laporan Pesanan</div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script>
+    const tbody = document.querySelector('#orderTable tbody');
+    dataOrders.forEach(order => {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td>${order.doNumber}</td>
+        <td>${order.nama}</td>
+        <td>${order.alamat}</td>
+        <td>${order.ekspedisi}</td>
+        <td>${order.paket}</td>
+        <td>${order.tanggalKirim}</td>
+        <td>Rp ${order.total.toLocaleString()}</td>
+        <td>${order.status}</td>
+      `;
+      tbody.appendChild(tr);
+    });
+  </script>
+</body>
+</html>

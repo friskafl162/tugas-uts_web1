@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Checkout - Bookstore</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Pemesanan</h2>
+      <div class="nav">
+        <a class="btn" href="3_dashboard.html">Dashboard</a>
+        <a class="btn" href="4_stok.html">Stok</a>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:12px">
+      <h3>Form Pemesanan</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div>
+          <div class="form-group"><label>Nama</label><input id="nama" class="input"></div>
+          <div class="form-group"><label>Alamat</label><input id="alamat" class="input"></div>
+          <div class="form-group"><label>Nomor HP</label><input id="hp" class="input"></div>
+          <div class="form-group"><label>Delivery Order</label><input id="do" class="input" placeholder="DO-XXXX"></div>
+        </div>
+        <div>
+          <div class="form-group"><label>Pilih Buku</label>
+            <select id="pilihBuku" class="input"></select>
+          </div>
+          <div class="form-group"><label>Jumlah</label><input id="qty" class="input" type="number" value="1"></div>
+          <div class="form-group"><label>Ekspedisi</label><input id="ekspedisi" class="input" placeholder="JNE/TIKI"/></div>
+          <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:8px">
+            <button id="addOrder" class="btn primary">Tambah Pesanan</button>
+          </div>
+        </div>
+      </div>
+
+      <h4 style="margin-top:12px">Daftar Pesanan</h4>
+      <table class="table" id="ordersTbl"><thead><tr><th>DO</th><th>Nama</th><th>Buku</th><th>Qty</th><th>Total</th></tr></thead><tbody></tbody></table>
+    </div>
+
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/4_checkout.js"></script>
+</body>
+</html>

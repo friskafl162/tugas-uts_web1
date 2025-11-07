@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tracking - Bookstore</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Tracking Pengiriman</h2>
+      <div class="nav">
+        <a class="btn" href="3_dashboard.html">Dashboard</a>
+        <a class="btn" href="4_stok.html">Stok</a>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:12px">
+      <div style="display:flex;gap:8px">
+        <input id="doInput" class="input" placeholder="Masukkan Nomor DO (contoh: DO-1001)">
+        <button id="cariBtn" class="btn primary">Cari</button>
+      </div>
+
+      <div id="result" style="margin-top:12px"></div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/5_tracking.js"></script>
+</body>
+</html>

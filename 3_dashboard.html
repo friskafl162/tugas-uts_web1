@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard - Bookstore Pastel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div>
+        <div class="greeting" id="greeting">Halo</div>
+        <div class="small">Selamat datang di toko buku pastel</div>
+      </div>
+      <div class="nav">
+        <a class="btn" href="4_stok.html">Katalog</a>
+        <a class="btn" href="6_tracking.html">Tracking</a>
+        <a class="btn" href="5_checkout.html">Pemesanan</a>
+      </div>
+    </div>
+
+    <!-- Banner -->
+    <div class="card" style="margin-top:20px;background:linear-gradient(90deg,#f6c7d7,#c7e8f6);color:#333;text-align:center;">
+      <h2>📚 Welcome to Bookstore Pastel</h2>
+      <p>Nikmati pengalaman belanja buku dengan nuansa pastel yang calming!</p>
+    </div>
+
+    <!-- Katalog -->
+    <div class="card" style="margin-top:20px">
+      <h3>📖 Koleksi Buku Kami</h3>
+      <div id="bookList" style="display:flex;flex-wrap:wrap;gap:16px;margin-top:10px"></div>
+    </div>
+
+    <div class="footer">Bookstore Pastel • UTS Pemrograman Web</div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/2_dashboard.js"></script>
+</body>
+</html>

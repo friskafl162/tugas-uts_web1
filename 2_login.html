@@ -1,0 +1,43 @@
+<!doctype html;>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login - Bookstore Pastel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card" style="max-width:520px;margin:40px auto;">
+      <h2>Welcome to Bookstore</h2>
+      <p class="small">Masuk pakai akun demo: <strong>user@test.com</strong> / <strong>123456</strong></p>
+      <div class="form-group">
+        <label>Email</label>
+        <input id="email" class="input" type="email" placeholder="you@email.com" />
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input id="password" class="input" type="password" placeholder="password" />
+      </div>
+      <div style="display:flex;gap:8px;justify-content:flex-end;">
+        <button id="forgotBtn" class="btn">Lupa Password</button>
+        <button id="registerBtn" class="btn">Daftar</button>
+        <button id="loginBtn" class="btn primary">Login</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal" style="display:none" class="modal">
+    <div class="card">
+      <h3 id="modalTitle">Modal</h3>
+      <p id="modalBody" class="small"></p>
+      <div style="text-align:right;margin-top:12px">
+        <button id="closeModal" class="btn">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/1_login.js"></script>
+</body>
+</html>
