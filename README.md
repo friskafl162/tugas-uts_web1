@@ -609,7 +609,7 @@ website ini dibuat untuk memenuhi tugas UTS pemrograman web. isinya tentang toko
 
 ## Alur Pikir
   1. pertama saya membuat halamannya dulu. ada login, dashboard, katalog, checkout/pemesanan, dan tracking.
-  2. setelah itu saya juga menyipkan datanya di satu file bernama data.js, disitu ada data buku dan data pesanan, semuanya disimpan dalam bentuk array JSON
-  3.  
+  2. setelah itu saya juga menyipkan datanya di satu file bernama data.js, disitu ada data buku dan data pesanan, semuanya disimpan dalam bentuk array JSON.
+  
 ## Kesimpulan
 intinya saya membuat website ini untuk bisa menunjukan fungsi dasar dari HTML buat struktur, CSS buat tampilan, dan JS untuk logika interaktifnya.
